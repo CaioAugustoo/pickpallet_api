@@ -6,9 +6,28 @@
     $pallet2 = sanitize_text_field($request['pallet2']);
     $pallet3 = sanitize_text_field($request['pallet3']);
     $pallet4 = sanitize_text_field($request['pallet4']);
+    $regex = "/#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?\b/";
 
     if(empty($pallet1) || empty($pallet2) || empty($pallet3) || empty($pallet4)) {
-      $response = new WP_Error('erro', 'Verifique se não deixou algum campo vazio ou não inseriu um hexadecimal incorreto.', ['status' => 422]);
+      $response = new WP_Error('erro', 'Verifique se não deixou algum campo vazio ou não inseriu um hexadecimal incorreto.', ['status' => 400]);
+      return rest_ensure_response($response);
+    }
+
+    // Validate a correct hexa color
+    if(!preg_match($regex, $pallet1)) {
+      $response = new WP_Error('erro', 'Valor hexadecimal inválido.', ['status' => 400]);
+      return rest_ensure_response($response);
+    } 
+    elseif (!preg_match($regex, $pallet2)) {
+      $response = new WP_Error('erro', 'Valor hexadecimal inválido.', ['status' => 400]);
+      return rest_ensure_response($response);
+    }
+    elseif (!preg_match($regex, $pallet3)) {
+      $response = new WP_Error('erro', 'Valor hexadecimal inválido.', ['status' => 400]);
+      return rest_ensure_response($response);
+    }
+    elseif (!preg_match($regex, $pallet4)) {
+      $response = new WP_Error('erro', 'Valor hexadecimal inválido.', ['status' => 400]);
       return rest_ensure_response($response);
     }
     
