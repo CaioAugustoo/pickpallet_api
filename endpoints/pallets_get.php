@@ -22,7 +22,7 @@
     $post = get_post($post_id);
 
     if(!isset($post) || empty($post_id)) {
-      $response = new WP_Error('erro', 'Paleta não encontrada', ['status' => 404]);
+      $response = new WP_Error(404, 'Paleta não encontrada', null);
       return rest_ensure_response($response);
     }
 
