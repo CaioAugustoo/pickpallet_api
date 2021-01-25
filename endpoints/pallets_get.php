@@ -32,7 +32,7 @@
   }
 
   function register_api_pallet_get() {
-    register_rest_route('api', '/pallet/(?P<id>[0-9]+)', [
+    register_rest_route('api', '/pallets/(?P<id>[0-9]+)', [
       'methods' => WP_REST_SERVER::READABLE,
       'callback' => 'api_pallet_get',
     ]);
