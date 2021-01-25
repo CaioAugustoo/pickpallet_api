@@ -9,7 +9,7 @@
       'id' => $post->ID,
       'created_at' => $post->post_date,
       'pallet1' => $post_meta['pallet1'][0],
-      'pallet2' => $post_meta['pallet3'][0],
+      'pallet2' => $post_meta['pallet2'][0],
       'pallet3' => $post_meta['pallet3'][0],
       'pallet4' => $post_meta['pallet4'][0],
     ];
