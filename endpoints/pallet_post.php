@@ -37,7 +37,7 @@
       'meta_input' => [
         'pallet1' => $pallet1,
         'pallet2' => $pallet2,
-        'pallet3' => $pallet4,
+        'pallet3' => $pallet3,
         'pallet4' => $pallet4,
       ],
     ];
