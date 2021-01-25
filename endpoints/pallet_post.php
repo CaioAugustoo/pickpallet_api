@@ -2,6 +2,7 @@
   function api_pallet_post($request) {
   
     // "Input" of each pallet color
+    $pallet_id = $request->ID;
     $pallet1 = sanitize_text_field($request['pallet1']);
     $pallet2 = sanitize_text_field($request['pallet2']);
     $pallet3 = sanitize_text_field($request['pallet3']);
@@ -35,6 +36,7 @@
       'post_title' => 'pallet' . ' ' . rand(),
       'post_status' => 'publish',
       'meta_input' => [
+        'id' => $pallet_id,
         'pallet1' => $pallet1,
         'pallet2' => $pallet2,
         'pallet3' => $pallet3,
@@ -42,8 +44,8 @@
       ],
     ];
 
-    wp_insert_post($response);
-    return rest_ensure_response($response);
+    $pallet_id = wp_insert_post($response);
+    return rest_ensure_response($pallet_id);
   };
 
   function register_api_pallet_post() {
