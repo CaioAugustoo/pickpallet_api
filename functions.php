@@ -3,6 +3,7 @@
 $dirbase = get_template_directory();
 require_once $dirbase . '/endpoints/pallet_post.php';
 require_once $dirbase . '/endpoints/pallets_get.php';
+require_once $dirbase . '/endpoints/pallet_delete.php';
 
 function change_api($slug) {
   return 'json';

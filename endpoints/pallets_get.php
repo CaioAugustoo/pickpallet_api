@@ -15,7 +15,6 @@
     ];
   };
 
-
   // Get pallet by id
   function api_pallet_get($request) {
     $post_id = $request['id'];
