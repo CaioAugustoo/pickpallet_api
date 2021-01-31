@@ -163,7 +163,7 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
 
  - "Valor hexadecimal inválido."
  
-     É retorando quando, ao adicionar uma nova paleta, não foi inserido corretamente o valor hexadecimal. Deve respeitar o seguinte padrão de regex:    /#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?\b/
+     É retornado quando, ao adicionar uma nova paleta, não foi inserido corretamente o valor hexadecimal. Deve respeitar o seguinte padrão de regex:    /#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?\b/
      
      
  - "Paleta não encontrada"
