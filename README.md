@@ -183,4 +183,4 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
  
  ### Licença
  
- Copyright © 2020 Caio Augusto.
+ Copyright © 2021 Caio Augusto.
