@@ -25,7 +25,7 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
 
 - GET
 
-    Por padrão o método é o GET. Este método lista, incialmente, 18 paletas. Um pouco mais abaixo você pode conferir os parâmetros.
+    Por padrão o método é o GET. Este método lista, inicialmente, 18 paletas. Um pouco mais abaixo você pode conferir os parâmetros.
            
     Exemplo de um trecho de código utilizando o método GET:
 
