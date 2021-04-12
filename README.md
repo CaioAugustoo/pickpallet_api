@@ -32,7 +32,7 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
      ```javascript
       const fetchPallets = async () => {
         const response = await fetch(
-          "https://caiohtml.com/pickpallet/json/api/pallets"
+          "https://caioohtml.com/pickpallet/json/api/pallets"
         );
         const json = await response.json();
         console.log(json);
