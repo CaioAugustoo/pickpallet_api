@@ -16,8 +16,8 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
 
 ### Rotas
 
-- https://caiohtml.com/pickpallet/json/api/pallets 
-- https://caiohtml.com/pickpallet/json/api/pallets/:id
+- https://caioohtml.com/pickpallet/json/api/pallets 
+- https://caioohtml.com/pickpallet/json/api/pallets/:id
 
 
 ### Métodos HTTPS disponíveis:
@@ -49,7 +49,7 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
     ```javascript
       const fetchPallets = async () => {
         const response = await fetch(
-          "https://caiohtml.com/pickpallet/json/api/pallets/102"
+          "https://caioohtml.com/pickpallet/json/api/pallets/102"
         );
         const json = await response.json();
         console.log(json);
@@ -95,7 +95,7 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
      ```javascript
       const fetchPallets = async () => {
         const response = await fetch(
-         "https://caiohtml.com/pickpallet/json/api/pallets",
+         "https://caioohtml.com/pickpallet/json/api/pallets",
           {
             method: "POST",
             headers: { 
@@ -110,7 +110,7 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
         }
       );
       const json = await response.json();
-      console.log(json);  // retorna um number de valor: 126
+      console.log(json);  // 126
     };
     fetchPallets();
     ```
@@ -146,15 +146,15 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
     
  ### Parâmetros
   - ?_total
-      * https://caiohtml.com/pickpallet/json/api/pallets?_total=18  // por padrão o valor é 18. Você pode substituir por 32, por exemplo. 
+      * https://caioohtml.com/pickpallet/json/api/pallets?_total=18  // por padrão o valor é 18. Você pode substituir por 32, por exemplo. 
        
   - ?_page
-       * https://caiohtml.com/pickpallet/json/api/pallets?_page=3   // por padrão o valor é 1. Você pode substituir por 5, por exemplo. 
+       * https://caioohtml.com/pickpallet/json/api/pallets?_page=3   // por padrão o valor é 1. Você pode substituir por 5, por exemplo. 
        
        
     Caso seja de sua vontade, você pode utilizar os 2 parâmetros na mesma url: 
     
-     - https://caiohtml.com/pickpallet/json/api/pallets?_total=32&_page=2
+     - https://caioohtml.com/pickpallet/json/api/pallets?_total=32&_page=2
      
 ### Mensagens de erros
  - "Verifique se não deixou algum campo vazio ou não inseriu um hexadecimal incorreto."
