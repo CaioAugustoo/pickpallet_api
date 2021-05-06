@@ -145,10 +145,10 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
     Caso sucesso, retornará a seguinte mensagem: "Paleta deletada."
     
  ### Parâmetros
-  - ?_total
+  - ?_total (Limita a quantidade de dados a serem exibidos)
       * https://caioohtml.com/pickpallet/json/api/pallets?_total=18  // por padrão o valor é 18. Você pode substituir por 32, por exemplo. 
        
-  - ?_page
+  - ?_page (Traz a quantidade de dados informados (18 por padrão) para cada página. Útil para paginações)
        * https://caioohtml.com/pickpallet/json/api/pallets?_page=3   // por padrão o valor é 1. Você pode substituir por 5, por exemplo. 
        
        
