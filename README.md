@@ -133,9 +133,9 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
           {
             method: "DELETE",
             headers: {
-              "Content-Type": "application/json"
-            }
-          }
+              "Content-Type": "application/json",
+            },
+          },
         );
         const json = await response.json();
         console.log(json);
