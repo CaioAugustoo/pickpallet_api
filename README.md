@@ -99,7 +99,8 @@ API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
           {
             method: "POST",
             headers: { 
-              "Content-Type": "application/json" 
+              "Content-Type": "application/json",
+            },
           },
           body: JSON.stringify({
             pallet1: "#00af91",
