@@ -8,6 +8,9 @@ cada cor de cada paleta, basta clicar no hexadecimal de cada cor.
  
  
 ### A API
+Esta foi descontinuada, por favor conferir a nova versão do projeto em https://github.com/CaioAugustoo/pickpallete_api
+
+
 Esta API foi desenvolvida através do Wordpress. Caso você pretenda utilizá-la como seu tema, basta clonar este repositório e [adicionar](https://www.wpbeginner.com/beginners-guide/how-to-install-a-wordpress-theme/) nos temas do Wordpress.
 
 API desenvolvida para o projeto "PickPallet". Desenvolvida com PHP.
